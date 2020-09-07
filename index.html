@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Code</title>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+        <link rel="icon" href="https://yt3.ggpht.com/a-/AOh14Gh48bRXZpmo28vSfnyBxDSHF_zG0jBb2uamwZKv=s100-c-k-c0xffffffff-no-rj-mo">
+    </head>
+    <style type="text/css">
+    body{
+        margin: 0 auto;
+        text-align: center;
+        justify-self: center;
+        justify-content: center;
+        font-family: Nunito;
+        background-color: navy;
+    }
+    .home {
+        cursor: pointer;
+        width: 500px;
+        background-color: white;
+        justify-self: center;
+        justify-content: center;
+        text-align: center;
+        margin: 200px auto;
+        animation-name: home-backwards;
+        animation-fill-mode: forwards;
+        animation-duration: 2s;
+    }
+    .home:hover{
+        animation-name: home;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+    }
+    .logo{
+        width:100px;
+        height: 100px;
+        justify-self: center;
+        margin: 20 auto;
+        animation-name: logo-backwards;
+        animation-fill-mode: forwards;
+        animation-duration: 2s;
+    }
+    .logo:hover{
+        animation-name: logo;
+        animation-fill-mode: forwards;
+        animation-duration: 2s;
+    }
+    @keyframes logo {
+        0% {
+            transform: translateY(0);
+        }
+        100% {
+            transform: translateY(-10);
+        }
+    }
+    @keyframes logo-backwards {
+        0%{
+            transform: translateY(-10);
+        }
+        100%{
+            transform: translateY(0);
+        }
+    }
+    @keyframes home{
+        0% {
+            box-shadow: 0px 0px 0px 0px black;
+        }
+        100% {
+            box-shadow: 0px 2px 20px 9px white;
+        }
+    }
+    @keyframes home-backwards{
+        0%{
+            box-shadow: 0px 2px 20px 9px white;
+        }
+        100%{
+            box-shadow: 0px 0px 0px 0px white;
+        }
+    }
+    </style>
+    <body>
+        <div class="home">
+            <h1 style="font-size: 100">HTML Code</h1>
+        </div>
+    </body>
+</html>
